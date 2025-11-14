@@ -45,7 +45,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   ); /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
 }
 
-main img {
+.main__img {
   display : block;
   max-width : 90%;
   margin : 2rem auto;
@@ -54,8 +54,27 @@ main img {
   transition: transform 0.3s ease;
 }
 
-main img:hover {
+.main__img:hover {
   transform: scale(1.03);
+}
+
+.main__div {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.main__icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.main__icon:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
 
 .header {
