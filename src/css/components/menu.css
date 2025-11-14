@@ -30,6 +30,10 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   z-index: 3; /* Assure que le bouton est au-dessus des autres éléments */
   width: 30px; /* Définit la largeur du bouton à 30px */
   transition: all 0.4s ease-in-out; /* Ajoute une transition de 0.4 secondes pour toutes les propriétés, avec un effet d'accélération et de décélération */
+  cursor : pointer;
+  background: none;
+  border : none;
+  font-size: 1rem;
 }
 
 /*
@@ -39,4 +43,63 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   transform: rotate(
     90deg
   ); /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
+}
+
+main img {
+  display : block;
+  max-width : 90%;
+  margin : 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.03);
+}
+
+.header {
+  display :flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:1rem;
+  background: linear-gradient(135deg, #ffb457, #ff865b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.menu__list {
+  padding : 2rem;
+  display: flex;
+  flex-direction:column;
+  gap : 1.2rem;
+}
+
+.menu__link {
+  font-size : 1.3rem;
+  padding:0.8rem 1rem;
+  border-radius:8px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu__link:hover {
+  background-color: #ffe0c2;
+  transform: translateX(5px);
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  color : #222;
+  background-color: #fafafa;
+  padding:0;
+  margin:0;
+}
+
+main p {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  font-size: 1.1rem;
+  color: #333;
 }
