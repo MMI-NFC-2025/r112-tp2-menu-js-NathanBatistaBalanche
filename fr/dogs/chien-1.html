@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu JS</title>
+  <!-- Déclaration de la feuille de style -->
+  <link rel="stylesheet" href="../../src/css/components/menu.css" />
+  <script type="module" src="../../src/js/script.js"></script>
+</head>
+
+<body class="noscroll">
+  <!-- En-tête de la page -->
+  <header class="header container">
+
+    <div class="header__end">
+
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        🍔
+      </button>
+
+      <!-- Menu principal -->
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="../../en/dogs/chien-1.html">Version anglaise</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Retour à la page des chiens</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="chien-2.html">Chien n°2</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin du menu principal -->
+    </div>
+  </header>
+  <!-- Contenu principal de la page -->
+  <main>
+    <img class="main__img" src="../../public/img/dogs/German_shepherd_(5781199120).avif" alt="Photo d'un berger allemand" />
+    <div class="main__div">
+      <img class="main__icon" src="../../public/icones/Archive.svg" alt="Icône d'archive"/>
+      <img class="main__icon" src="../../public/icones/Book.svg" alt="Icône d'un livre"/>
+      <img class="main__icon" src="../../public/icones/Bag-plus.svg" alt="Icône d'un sac avec un +"/>
+    </div>
+  </main>
+  <!-- Fin du contenu principal -->
+
+</body>
+
+</html>
